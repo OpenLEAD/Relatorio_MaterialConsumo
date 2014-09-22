@@ -1,0 +1,112 @@
+ 
+
+%%******************************************************************************
+%% CONFIGURATION
+%%******************************************************************************
+
+
+\documentclass[a4paper,11pt,oneside,openany,brazilian, version=last,draft=false,]{article}
+
+
+
+
+%%******************************************************************************
+%% DOCUMENT STYLE
+%%******************************************************************************
+
+
+\usepackage{graphicx}
+\usepackage{mybook}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{pdfpages}
+\usepackage{pdflscape}
+\usepackage{geometry}
+
+\pdfcompresslevel = 9
+\oddsidemargin = 31pt
+\topmargin = 20pt
+\headheight = 12pt
+\headsep = 25pt
+\textheight = 592pt
+\textwidth = 390pt
+\marginparsep = 10pt
+\marginparwidth = 35pt
+\footskip = 30pt
+
+%%******************************************************************************
+%% MAIN BODY
+%%******************************************************************************
+
+\begin{document}
+
+%%==============================================================================
+%% FRONT MATTER
+%%==============================================================================
+
+%\frontmatter
+
+\include{00_frontpage}
+\include{00_header}
+
+
+
+%%==============================================================================
+%% SUMMARY
+%%==============================================================================
+
+%\tableofcontents
+
+
+%%==============================================================================
+%% LIST OF TABLES, FIGURES, AND LISTINGS
+%%==============================================================================
+
+%\listoffigures
+%\listoftables
+%
+%\lstlistoflistings
+
+
+%%==============================================================================
+%% MAIN MATTER
+%%==============================================================================
+
+%\mainmatter
+
+\tableofcontents
+\listoffigures
+\include{01_Intro}
+\include{02_Bateria}
+\include{03_componentes_1}
+\include{04_componentes_2}
+\include{05_abracadeira}
+\include{06_Borracha}
+\include{07_Conversor}
+\include{08_Multicabo}
+\include{09_componentes_3}
+\include{anexo}
+
+%\include{Apendix II - Eletrônica}
+
+
+
+
+
+
+%%==============================================================================
+%% APPENDIX - Team
+%%==============================================================================
+
+%\appendix
+
+
+
+
+%%==============================================================================
+%% BACK MATTER - Bibliography and Signature
+%%==============================================================================
+
+%\backmatter
+
+\end{document}
